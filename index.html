@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Audio-Book-Zone</title>
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable="no">
+    <title>Audio Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
- 
+    
 
- <h1>Main Page</h1>
+<div class="header">
+ <p id="back" onclick="window.location.href='https://tcg-ethun.github.io/Education/'"> <i class="fas fa-arrow-left"></i></p>
+ <p id="head">Audio Book Library</p>
+</div>
+
+<div class="container">
+ <div class="book" id="book1">
+          <img src="./Pic/7Habbit.png" alt="">
+          <div class="right">    <div id="name"><b>The 7 Habbit of Highly Effective People</b></div> 
+          <button onclick="window.location.href='/Book/7Habbit.html'">Listen &nbsp;<i class="fa-solid fa-headphones-simple"></i> </button>
+         </div>
+      
+ </div>
 
 
- <script src="script.js"></script>
+</div>
+
+    <script src="script.js"></script>
 </body>
 </html>

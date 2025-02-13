@@ -1,0 +1,160 @@
+
+
+*{
+ font-family: poppins;
+ scrollbar-width: none;
+}
+@font-face {
+ font-family: poppins;
+ src: url(/font/Poppins-Regular.ttf);
+}
+
+body {
+ padding: 20px;
+ overflow-x: hidden;
+}
+header {
+ display: flex;
+ height: auto;
+ margin-top: -5%;
+ width: 100%;
+ margin-bottom: 10%;
+ align-items: center;
+}
+
+
+header h1{
+ width: 100%;
+ height: auto;
+ display: flex;
+ font-weight:bolder;
+ justify-content: center;
+ align-items: center;
+ font-size: 30px;
+}
+
+.back-btn {
+ color: black;
+ text-decoration: none;
+ cursor: none;
+ font-size: 20px;
+ margin-right: 5%;
+ transition: color 0.3s;
+}
+.back-btn:active{
+ color: #6c5ce7;
+}
+.container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+.book {
+ /* background: #fff; */
+ border-radius: 15px;
+ /* box-shadow: 0 8px 15px rgba(0,0,0,0.1); */
+ /* margin: 20px; */
+ /* padding: 15px; */
+ margin-bottom: 10%;
+ padding: 8%;
+ width: 100%;
+ text-align: center;
+ transition: transform 0.3s;
+}
+
+.book img {
+ width: 60%;
+ margin-bottom: 4%;
+ filter: drop-shadow(0px 0px 20px rgb(159, 158, 158));
+ border-radius: 10px;
+}
+.book h3 {
+ margin: 10px 0;
+ color: #2d3436;
+}
+.book p {
+ color: #636e72;
+ font-size: 14px;
+}
+.toggle-episodes {
+ background: #6c5ce7;
+ color: white;
+ border: none;
+ padding: 8px 20px;
+ border-radius: 50px;
+ cursor: none;
+ transition: background 0.3s;
+ box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.toggle-episodes:active{
+ background: #a29bfe;
+}
+.episodes {
+ width: 100%;
+ margin-left: 3%;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 15px;
+ align-items: center;
+ /* background-color: blue; */
+ /* display: none; */
+ margin-top: 7%;
+ padding-bottom: 30%;
+}
+.episodes div {
+ /* color: white; */
+ /* background-color: white; */
+ border: none;
+ filter: drop-shadow(0px 5px 15px rgb(203, 203, 205));
+ background-color: rgb(66, 115, 251);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ width: 40%;
+ /* margin-top: 7%; */
+ margin-right: 4%;
+ padding-top: 5%;
+ padding-bottom: 5%;
+ /* filter: drop-shadow(0px 0px 15px rgb(194, 194, 194)); */
+ /* padding-right: 6%; */
+ font-size: 14px;
+ border-radius: 50px;
+ cursor: none;
+ margin-bottom: 5px;
+ transition: background 0.3s;
+}
+.episodes div:active{
+ background: gold;
+}
+.floating-player {
+ position: fixed;
+ bottom: -70px;
+ left: 50%;
+ transform: translateX(-50%);
+ background: #fff;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+ border-radius: 10px;
+ width: 90%;
+ max-width: 400px;
+ padding: 10px;
+ transition: bottom 0.5s;
+}
+.floating-player.show {
+ bottom: 20px;
+}
+.floating-player h4 {
+ margin: 5px 0;
+}
+.floating-player audio {
+ width: 100%;
+ outline: none;
+}
+.toggle-btn {
+ float: right;
+ background: transparent;
+ border: none;
+ font-size: 20px;
+ cursor: none;
+}

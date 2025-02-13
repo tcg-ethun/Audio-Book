@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable="no">
+    <title>Audio Library</title>
+    <link rel="stylesheet" href="../Book/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="back-btn" onclick="window.location.href='../index.html'"><i class="fas fa-arrow-left"></i></a>
+         </header>
+
+    <div class="container">
+
+        <div class="book">
+            <img src="/Pic/7Habbit.png" width="60" alt="Book 1">
+            <h3>The 7 Habbit of Highly Effective People </h3>
+            <p>by <font color="#808080"><b>Stephen R. Covey</b></font> </p>
+            <p>Total Episodes : 23</p>
+            <!-- <div class="toggle-episodes" onclick="toggleEpisodes(this)">Show Episodes</div> -->
+            <div class="episodes">
+                <div onclick="playAudio('./sound/7Habbit/Ep1.mp3', 'The 7 Habbit of Highly Effective People : Episode 1')">Episode 1</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep2.mp3', 'The 7 Habbit of Highly Effective People : Episode 2')">Episode 2</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep3.mp3', 'The 7 Habbit of Highly Effective People : Episode 3')">Episode 3</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep4.mp3', 'The 7 Habbit of Highly Effective People : Episode 4')">Episode 4</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep5.mp3', 'The 7 Habbit of Highly Effective People : Episode 5')">Episode 5</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep6.mp3', 'The 7 Habbit of Highly Effective People : Episode 6')">Episode 6</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep7.mp3', 'The 7 Habbit of Highly Effective People : Episode 7')">Episode 7</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep8.mp3', 'The 7 Habbit of Highly Effective People : Episode 8')">Episode 8</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep9.mp3', 'The 7 Habbit of Highly Effective People : Episode 9')">Episode 9</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep10.mp3', 'The 7 Habbit of Highly Effective People : Episode 10')">Episode 10</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep11.mp3', 'The 7 Habbit of Highly Effective People : Episode 11')">Episode 11</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep12.mp3', 'The 7 Habbit of Highly Effective People : Episode 12')">Episode 12</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep13.mp3', 'The 7 Habbit of Highly Effective People : Episode 13')">Episode 13</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep14.mp3', 'The 7 Habbit of Highly Effective People : Episode 14')">Episode 14</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep15.mp3', 'The 7 Habbit of Highly Effective People : Episode 15')">Episode 15</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep16.mp3', 'The 7 Habbit of Highly Effective People : Episode 16')">Episode 16</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep17.mp3', 'The 7 Habbit of Highly Effective People : Episode 17')">Episode 17</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep18.mp3', 'The 7 Habbit of Highly Effective People : Episode 18')">Episode 18</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep19.mp3', 'The 7 Habbit of Highly Effective People : Episode 19')">Episode 19</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep20.mp3', 'The 7 Habbit of Highly Effective People : Episode 20')">Episode 20</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep21.mp3', 'The 7 Habbit of Highly Effective People : Episode 21')">Episode 21</div>
+                <div onclick="playAudio('./sound/7Habbit/Ep22.mp3', 'The 7 Habbit of Highly Effective People : Episode 22')">Episode 22</div>
+                <div onclick="playAudio('./sound/7Habbit/last.mp3', 'The 7 Habbit of Highly Effective People : Episode 23')"> Last Episode</div>
+            </div>
+        </div>
+
+    <div class="floating-player" id="floating-player">
+        <div class="toggle-btn" id="toggle-btn" onclick="togglePlayer()">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <h4 id="now-playing">Now Playing</h4>
+        <audio id="audio-player" controls>
+        </audio>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
