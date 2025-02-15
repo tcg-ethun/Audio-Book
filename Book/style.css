@@ -6,7 +6,7 @@
 }
 @font-face {
  font-family: poppins;
- src: url(/font/Poppins-Regular.ttf);
+ src: url(../font/Poppins-Regular.ttf);
 }
 
 body {

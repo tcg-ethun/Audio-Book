@@ -13,7 +13,7 @@ background-color: rgb(251, 251, 251);
 }
  @font-face {
   font-family: poppins;
-  src: url(/font/Poppins-Regular.ttf);
+  src: url(font/Poppins-Regular.ttf);
  }
 a{
 color: blue;
